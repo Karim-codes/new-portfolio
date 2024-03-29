@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Karim-Portfolio</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/a838bd90b6.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="container">
+				<nav>
+					<img src="images/logo.png" class="logo" alt="website-logo">
+					<ul id="sidemenu">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<i class="fas fa-times" onclick="closemenu()"></i>
+					</ul>
+					<i class="fas fa-bars" onclick="openmenu()"></i>
+				</nav>
+				<div class="header-text">
+					<p>Web Developer</p>
+					<h1>Hi, I'm <span>Karim</span><br> Computer Science <br> Student</h1>
+				</div>
+			</div>
+		</div>
+		<!-----------------------------About---------------------->
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="images/among2.png" alt="">
+					</div>
+					<div class="about-col-2">
+						<h1 class="sub-title"> About me</h1>
+						<p>Hello!! My name is Abdikarim Ahmed and I am passionate about technology and related fields.
+							Currently studying computer science at Brunel University.<br>
+							I am currently undertaking a placement as Information Technology Support Engineer<br>
+							at <a href="https://www.douglasandgordon.com" class="dandgLink">Douglas & Gordon</a>
+							graduating 2024/25<br>
+							I am extremely interested in learning about technology as well as coding and I hope one day to become
+							full MERN stack developer.<br>
+						</p>
+						<div class="tab-titles">
+							<p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+							<p class="tab-links" onclick="opentab('experience') ">Experience</p>
+							<p class="tab-links" onclick="opentab('education') ">Education</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li> <span>UI/UX</span><br>Designing web/app interface</li>
+								<li> <span>Web Development</span><br>Developing/Designing web app Development</li>
+								<li> <span>IT Support</span><br>Providing IT Support </li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li> <span>2021 - 2022</span><br>Main chef at Dirty Vegan</li>
+								<li> <span>2021 - 2022</span><br>Barista at Chango</li>
+								<li> <span> 2021 - 2022 </span><br>Full Stack Web Development</li>
+								<li> <span>2021 - Current</span><br>Designing/developing web interface at AAY-LTD</li>
+								<li> <span>2022 - Current</span><br>Providing IT Support</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li> <span>2016 - 2017</span><br>English for beginners ESOL at Southfields Academey</li>
+								<li> <span>2017 - 2018</span><br>5 GCSEs with grdes 4 and above at Southfields Academey </li>
+								<li> <span>2018 - 2020</span><br>Extended Diploma in Software Devlopment & IT with grade of D*D*D at Kingston College</li>
+								<li> <span>2020 - Current</span><br>Computer Science at Brunel University</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-----------------------------Services---------------------->
+		<div id="services">
+			<div class="container">
+				<h1 class="sub-title"> My Services</h1>
+				<div class="services-list">
+					<div>
+						<i class="fa-solid fa-compass-drafting"></i>
+						<h2>Web Design</h2>
+						<p>I like making web-designs, and through previuos experinces, 
+							I have gained a lot of experinces. I am activly searching for more
+							projects to create and I am working towrads having best designs. 
+						</p>
+						<a href="#" class="a">Learn more</a>
+					</div>
+					<div>
+						<i class="fa-solid fa-code"></i>
+						<h2>Web Development</h2>
+						<p>Web development is one of my best skills, I have been developing 
+							a lot of website in couple of months. My experinces has increased 
+							and so my skills and confidence. Also I can publish your website and get a domain for you!
+						</p>
+						<a href="#"class="a">Learn more</a>
+					</div>
+					<div>
+						<i class="fa-solid fa-headset"></i>
+						<h2>IT Support</h2>
+						<p>I am excellent at trouplshooting PC related issue in companies. 
+							I have gained tramnoduos hours of learning theorticlly and pratically, 
+							If you need IT support for your buiness, please feel free to contact me as security is proraty.
+						</p>
+						<a href="#"class="a">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ----------------potfolio------------------->
+		<div id="portfolio">
+			<div class="container">
+				<h1 class="sub-title"> My work</h1>
+				<div class="work-list">
+					<div class="work">
+						<img src="images/portfolio1.png"width="" height="600">    
+						<div class="layer">
+							<h3>Portfolio Website</h3>
+							<p>This portfolio website project, which you are currently engaging with, was both challenging and enjoyable to execute.
+							</p>
+							<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="images/sneaker1.png" width="" height="600">
+						<div class="layer">
+							<h3>Ecomerce Website</h3>
+							<p>I built this e-commerce website which sales sports shoes such Jordans and more. The project using HTML, CSS, and JavaScript can provide a dynamic and user-friendly online shopping experience. HTML provides the structure and content, 
+								CSS handles the visual design and layout, 
+								and JavaScript adds interactivity and functionality such as product search, shopping cart, and secure payment options. <!-- By combining these technologies, 
+								a well-designed e-commerce website can increase a business's online presence, improve customer satisfaction, and drive sales growth. --> <!-- Might use the commented to talk about the website when they click it-->
+							</p>
+							<a href="./pages/e-comerce/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						</div>
+					</div>
+					<div class="work">
+						<img src="images/blog.png" width="250px" height="600">
+						<div class="layer">
+							<h3>Blog website</h3>
+							<p>This is a blog website in which I could use to publishing articles on topics related to "design", "technology" and "mobile". I've used HTML and CSS and JavaScript to build this amazing blog website. The end result is a functional and aesthetically pleasing blog platform.
+							</p>
+							<a href="./pages/Blog-website/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						</div>
+					</div>
+				</div>
+                <a href="#" class="btn">See more</a>
+			</div>
+		</div>
+        <!-----------------------------Contact---------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> Abdikarim.ay@gmai.com</p>
+                        <p><i class="fa-sharp fa-solid fa-square-phone"></i> 07404054567</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twittwe.com"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <a href="/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+						<span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+			<div class="copyright">
+				<p>Copyright <i class="fa-regular fa-copyright"></i> Karim. CEO at AAY-LTD.</p>
+			</div>
+        </div>
+		<script>
+			var tablinks = document.getElementsByClassName("tab-links")
+			var tabcontents= document.getElementsByClassName("tab-contents")
+			function opentab(tabname){
+			     for(tablink of tablinks){
+			         tablink.classList.remove("active-link");
+			     }
+			     for(tabcontent of tabcontents){
+			         tabcontent.classList.remove("active-tab");
+			     }
+			     event.currentTarget.classList.add("active-link");
+			    document.getElementById(tabname).classList.add("active-tab")
+			}
+			
+		</script>
+
+		<script>
+			var sidemeu = document.getElementById("sidemenu");
+
+			function openmenu(){
+				sidemeu.style.right = "0";
+				return sidemeu;
+			}
+			function closemenu(){
+				sidemeu.style.right = "-200px";
+				return sidemeu;
+			}
+			
+		</script>
+		<script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycbzfmjvuvoyXNQ-Wmeok8f24_V5oC8mbXjoo9O1r6iDf3fN0DoH5K7BDWNoH6XV8Kps/exec'
+			const form = document.forms['submit-to-google-sheet']
+			const msg = document.getElementById("msg")
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			  
+				.then(response => {msg.innerHTML="Message sent successfully"
+				setTimeout(function(){
+					msg.innerHTML=""
+				},5000)
+				form.reset()
+			})
+				.catch(error => console.error('Error!', error.message))
+			})
+		  </script>
+	</body>
+</html>
