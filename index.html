@@ -24,7 +24,7 @@
 					<i class="fas fa-bars" onclick="openmenu()"></i>
 				</nav>
 				<div class="header-text">
-					<p>Web Developer</p>
+					<p>Full Stack Developer</p>
 					<h1>Hi, I'm <span>Karim</span><br> Computer Science <br> Student</h1>
 				</div>
 			</div>
@@ -38,14 +38,12 @@
 					</div>
 					<div class="about-col-2">
 						<h1 class="sub-title"> About me</h1>
-						<p>Hello!! My name is Abdikarim Ahmed and I am passionate about technology and related fields.
-							Currently studying computer science at Brunel University.<br>
-							I am currently undertaking a placement as Information Technology Support Engineer<br>
-							at <a href="https://www.douglasandgordon.com" class="dandgLink">Douglas & Gordon</a>
-							graduating 2024/25<br>
-							I am extremely interested in learning about technology as well as coding and I hope one day to become
-							full MERN stack developer.<br>
-						</p>
+						<p>Hello! I'm Abdikarim Ahmed, a final year Computer Science student at Brunel University, set to graduate in 2024. <br> 
+							With a deep passion for technology and coding, I've dedicated my studies and free time to mastering the intricacies of software development. <br> 
+							My goal is to become a proficient full stack developer, leveraging my skills to create impactful and innovative solutions.
+							Throughout my academic journey, I've engaged in various projects that have allowed me to apply theoretical knowledge in practical settings, 
+							further fueling my enthusiasm for technology. I'm excited about the opportunities that lie ahead and I am eager to contribute to the tech community.
+						</p>						  
 						<div class="tab-titles">
 							<p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
 							<p class="tab-links" onclick="opentab('experience') ">Experience</p>
@@ -159,15 +157,13 @@
                 <div class="row">
                     <div class="contact-left">
                         <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-solid fa-paper-plane"></i> Abdikarim.ay@gmai.com</p>
+                        <p><i class="fa-solid fa-paper-plane"></i> Abdikarim.ay@gmail.com</p>
                         <p><i class="fa-sharp fa-solid fa-square-phone"></i> 07404054567</p>
                         <div class="social-icons">
-                            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://twittwe.com"><i class="fa-brands fa-twitter"></i></a>
                             <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
                         </div>
-                        <a href="/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                        <a href="/images/kARIM.pdf" download class="btn btn2">Download CV</a>
                     </div>
                     <div class="contact-right">
                         <form name="submit-to-google-sheet">
@@ -181,7 +177,7 @@
                 </div>
             </div>
 			<div class="copyright">
-				<p>Copyright <i class="fa-regular fa-copyright"></i> Karim. CEO at AAY-LTD.</p>
+				<p> Karim.</p>
 			</div>
         </div>
 		<script>
@@ -214,12 +210,13 @@
 			
 		</script>
 		<script>
-			const scriptURL = 'https://script.google.com/macros/s/AKfycbzfmjvuvoyXNQ-Wmeok8f24_V5oC8mbXjoo9O1r6iDf3fN0DoH5K7BDWNoH6XV8Kps/exec'
+			const scriptURL = 'https://script.google.com/macros/s/AKfycby2WOu3zTshkGj8M5DwJWq0bretjYAE27XiZD86eCUsXGjAJKUE_XPOaHAuHQgthKov/exec'
 			const form = document.forms['submit-to-google-sheet']
 			const msg = document.getElementById("msg")
 			form.addEventListener('submit', e => {
 			  e.preventDefault()
-			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form), mode: 'no-cors'}) // Adding mode: 'no-cors'
+
 			  
 				.then(response => {msg.innerHTML="Message sent successfully"
 				setTimeout(function(){
